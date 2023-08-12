@@ -14,21 +14,19 @@ output_folder = os.getcwd()
 output_audio_path = os.path.join(output_folder, "audio.mp3")
 
 folder_path = os.getcwd()
+
+#IF THE TEXT IS IN A TEXT FILE
 #filename = "text.txt"
-
 #file_path = os.path.join(folder_path, filename)
-
 #with open(file_path, "r", encoding='UTF-8') as file:
-#   content = file.read()
+#    content = file.read()
 
 texto=input("Give text-to-speech :")
 accent=input("Choose Language (ar/fr/en/es/...) :")
 print("converting to WAV...")
-#tts = gTTS(text=texto, lang='ar' )   ---for text file
+#tts = gTTS(text=texto, lang='ar' )  //FOR TEXT FILE
 tts = gTTS(text=texto, lang=accent)
 tts.save(output_audio_path)
-
-
 
 
 output_audio_path = os.getcwd()
@@ -45,7 +43,7 @@ dst = output_audio
 sound = AudioSegment.from_mp3(src)
 sound.export(dst, format="wav")
 
-speedo=float(input("Choose Speed (1/1.5/2.8/...):"))
+speedo=float(input("Choose Speed (0.5/1/1.2/2.8/...):"))
 
 filename = "converted_audio.wav"
 
@@ -89,7 +87,7 @@ else:
     videoclip.write_videofile(output_video_path, fps=24, codec="libx264")
 
 
-
+print("Deleting Cache Files...")
 
 f3=os.path.join(folder_path, "final_audio.wav")
 os.remove(f3)
