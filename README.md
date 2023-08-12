@@ -12,6 +12,6 @@ READ BEFORE:
 - The script removes the original video's sound.
 
 TUTORIAL:
-1- Make a new folder and put the script in it.
-2- Put the video in the same folder.
-3- Run the script and follow the instructions.
+- Make a new folder and put the script in it.
+- Put the video in the same folder.
+- Run the script and follow the instructions.
