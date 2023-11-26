@@ -1,7 +1,7 @@
 # TTS_video
-Text-to-speech script and add it to an input video
-Multi-Language
-Control Speech Speed
+## Text-to-speech script and add it to an input video ##
+Multi-Language ##
+Control Speech Speed ##
 
 I use it to make commercial videos, I put the final video and run the script, you need to write or paste the text you want to speak then choose the voice's speed.
 
